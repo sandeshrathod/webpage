@@ -1,0 +1,37 @@
+doctype html
+html
+  head
+    title='layout page'
+    style
+      include .\stylesheets\css\bootstrap.min.css
+      include .\stylesheets\css\bootstrap.css
+      include .\stylesheets\css\custom.css
+    script
+      include .\stylesheets\js\bootstrap.min.js
+      include .\stylesheets\js\bootstrap.js
+      include .\stylesheets\js\bootstrap.bundle.js
+      include .\stylesheets\js\bootstrap.bundle.min.js
+  body
+      nav.navbar.navbar-expand-lg.navbar-light.bg-light
+        a.navbar-brand(href='/layout') icon
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+
+        .collapse.navbar-collapse(id='navbarSupportedContent')
+            ul.navbar-nav.mr-auto
+              li.nav-item.active
+                a.nav-link(href='/layout') Home
+              li.nav-item
+                a.nav-link(href='/f') tutourials
+              li.nav-item
+                a.nav-link(href='/food') coding ground
+              li.nav-item
+                a.nav-link(href='/places')
+            ul.navbar-nav.float-right
+              li.nav-item
+                a.nav-link(href='/login') Admin
+              li.nav-item.dropdown
+                a.nav-link.dropdown-toggle(id='navbarDropdownMenuLink', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') join us
+                  .dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
+                  a.dropdown-item(href='/f') Settings
+      block content

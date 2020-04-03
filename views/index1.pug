@@ -1,0 +1,22 @@
+extends layout.pug
+block content
+  center
+    .div1.text-center
+      p
+        |hello worldI can promise you right away that this sort of collected
+        |article is not present anywhere at all and it gives me great pleasure to be the one to write about it.
+        |It was a challenge for me when I started out and would like to share my learnings here.
+        |I am expecting that you have working knowledge of Javascript.
+  div.pos-f-t
+    div.collapse#navbarToggleExternalContent
+      div.bg-dark.p-4
+        h5.text-white.h4 collapsed content
+        span.text-muted Toggleable via the navbar brand
+    nav.navbar.navbar-dark.bg-dark
+      button.navbar-toggler( type='button'
+      data-toggle="collapse"
+      data-target="#navbarToggleExternalContent"
+      aria-controls="navbarToggleExternalContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation")
+        span.navbar-toggler-icon
