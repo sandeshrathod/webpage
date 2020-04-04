@@ -8,20 +8,22 @@ app.set('view engine', 'pug');
 app.set('views','./views');
 
 router.get('/',function(req, res){
-  res.render('/routes/index.js');
+  res.render('layout');
 
 });
 router.get('/food', function(req, res) {
   res.render('a');
 });
 
-
-router.get('/layout',function(req,res){
-  res.render('layout');
+router.get('/syllabus',function(req,res){
+  res.render('syllabus');
+});
+router.get('/lol',function(req, res){
+  res.render('lol');
 });
 
 
 app.use('/', router);
-app.listen(process.env.port || 8081);
+app.listen(8081);
 
 console.log('Running at Port 8081');
